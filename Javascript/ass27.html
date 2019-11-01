@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function reg_form(){
+			var welcome_para=document.getElementById('welcome');
+			var name=document.getElementById('name');
+			var Email_para=document.getElementById('My Email Id is');
+			mail=document.getElementById('mail');
+			welcome_para.innerHTML="welcome " + name.value
+			Email_para.innerHTML="My Email Id is "+mail.value;
+
+		}
+	</script>
+	<form>
+	First Name: <input type="text" id="name"><br><br>
+	Last Name: <input type="text"><br><br>
+	Email Id: <input type="text" id="mail"><br><br>
+	Password: <input type="text"><br><br>
+	<input type="button" value="SignUp" onclick="reg_form();">
+</form>
+
+<p id="welcome"></p><p id="My Email Id is"></p> 
+
+</body>
+</html>

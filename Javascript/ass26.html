@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		image_tracker="m";
+		function image(){
+		micro=document.getElementById('micro');
+		//micro.src="twitter.png";
+		if(image_tracker=="m"){
+			micro.src="twitter.png";
+			image_tracker="t";
+		}else{
+			micro.src="microsoft.png";
+			image_tracker="m";
+		}
+	}
+		//setTimeout=('image()',1000);
+		timer=setInterval("image()",300);
+
+	</script>
+
+
+<img src="microsoft.png" onclick="clearInterval(timer)" id="micro">
+</body>
+</html>
